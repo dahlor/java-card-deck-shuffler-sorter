@@ -13,9 +13,8 @@ public class ShufflerSorter {
 		List<Card> deckOfCards = new ArrayList<Card>();
 		
 		for (int suit = 0; suit <= 3; suit++) {
-			for (int rank = 2; rank <= 14; rank ++) {
-				Card newCard = new Card(rank, suit);
-				deckOfCards.add(newCard);
+			for (int rank = 2; rank <= 14; rank++) {
+				deckOfCards.add(new Card(rank, suit));
 			}
 		}
 
@@ -38,6 +37,13 @@ public class ShufflerSorter {
 // 6. Sort the deck of cards by rank (ignoring suit) and print to the console		
 		
 		System.out.println("\nSorted by Rank:");
+		
+		deckOfCards.sort(new RankSorter());
+		
+		for (Card eachIndividualCard : deckOfCards) {
+			System.out.println(eachIndividualCard);
+		}
+
 
 // 7. Sort the deck of cards by suit first and then rank; print to the console		
 		

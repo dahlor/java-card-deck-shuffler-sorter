@@ -4,10 +4,10 @@ package com.atlantiscoding;
 
 public class Card {
 	
-	private int rank;
-	private int suit;
+	private Integer rank;
+	private Integer suit;
 	
-	public Card(int rank, int suit) {
+	public Card(Integer rank, Integer suit) {
 		this.rank = rank;
 		this.suit = suit;
     }
@@ -18,5 +18,13 @@ public class Card {
         String cardString = ranks[this.rank] + " of " + suits[this.suit];
         return cardString;
     }
+
+	public int getRank() {
+		return rank;
+	}
+
+	public int getSuit() {
+		return suit;
+	}
 		
 }
