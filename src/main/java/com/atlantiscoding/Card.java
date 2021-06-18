@@ -1,5 +1,7 @@
 package com.atlantiscoding;
 
+// 1. Create a "Card" object with fields for "Suit" and "Rank"
+
 public class Card {
 	
 	private int rank;
