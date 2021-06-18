@@ -30,6 +30,10 @@ public class ShufflerSorter {
 // 5. Print the deck of cards to the console
 		
 		System.out.println("\nShuffled Deck:");
+		
+		for (Card eachIndividualCard : deckOfCards) {
+			System.out.println(eachIndividualCard);
+		}
 
 // 6. Sort the deck of cards by rank (ignoring suit) and print to the console		
 		
