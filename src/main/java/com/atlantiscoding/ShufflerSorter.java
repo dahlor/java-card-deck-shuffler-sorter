@@ -44,11 +44,14 @@ public class ShufflerSorter {
 			System.out.println(eachIndividualCard);
 		}
 
-
 // 7. Sort the deck of cards by suit first and then rank; print to the console		
 		
 		System.out.println("\nSorted by Suit and Rank:");
 		
+		deckOfCards.sort(new SuitAndRankSorter());
 		
+		for (Card eachIndividualCard : deckOfCards) {
+			System.out.println(eachIndividualCard);
+		}
 	}	
 }

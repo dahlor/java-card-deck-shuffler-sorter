@@ -14,7 +14,7 @@ public class Card {
     
     public String toString() {
         String[] ranks = {null, null, "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE", "TEN", "JACK", "QUEEN", "KING", "ACE"};
-        String[] suits = {"HEARTS", "DIAMONDS", "SPADES", "CLUBS"};
+        String[] suits = {"CLUBS", "DIAMONDS", "HEARTS", "SPADES"};
         String cardString = ranks[this.rank] + " of " + suits[this.suit];
         return cardString;
     }
