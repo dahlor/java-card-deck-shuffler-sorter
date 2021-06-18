@@ -11,8 +11,13 @@ public class ShufflerSorter {
 // 2. Populate a List<Card> with all 52 cards
 		
 		List<Card> deckOfCards = new ArrayList<Card>();
-
 		
+		for (int suit = 0; suit <= 3; suit++) {
+			for (int rank = 2; rank <= 14; rank ++) {
+				Card newCard = new Card(rank, suit);
+				deckOfCards.add(newCard);
+			}
+		}
 
 // 3. Print the size of the deck to the console
 		
