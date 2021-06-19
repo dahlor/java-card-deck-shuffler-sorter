@@ -3,6 +3,18 @@
   <groupId>com.atlantiscoding.projects</groupId>
   <artifactId>java-card-deck-shuffler-sorter</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>16</source>
+          <target>16</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
   <name>java-card-deck-shuffler-sorter</name>
   <description>A 52-card deck shuffler and sorter.</description>
 </project>
